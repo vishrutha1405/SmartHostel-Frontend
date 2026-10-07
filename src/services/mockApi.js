@@ -1,7 +1,7 @@
 // API Service Layer connecting React Frontend to MongoDB Node.js Backend API
 // Fallback to localStorage if backend server is offline
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 const KEYS = {
   USERS: "sh_users",
